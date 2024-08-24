@@ -1,0 +1,62 @@
+#gradient {
+    border: 1px solid gray;
+    grid-area: gradient;
+    resize: both;
+}
+
+.gradient-rect {
+    width: 250px;
+    height: 250px;
+}
+
+.main {
+    display: grid;
+}
+
+.main.gradient-4c-rect-layout {
+    grid-template-areas:
+        "shape shape shape"
+        "tl-color f1 tr-color"
+        "f2 gradient f3"
+        "bl-color f4 br-color"
+        "extra extra extra";
+}
+
+.color-group {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.slider-group {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.radio-group {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.radio-group-label {
+    grid-area: 1 / 1 / 1 / -1;
+}
+
+#tl-color-group {
+    grid-area: tl-color;
+}
+
+#tr-color-group {
+    grid-area: tr-color;
+}
+
+#bl-color-group {
+    grid-area: bl-color;
+}
+
+#br-color-group {
+    grid-area: br-color;
+}
+
+#shape-controls {
+    grid-area: shape;
+}

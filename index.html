@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Sandbox</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main gradient-4c-rect-layout">
+      <div id="gradient" class="gradient-rect">
+      </div>
+      <div id="shape-controls">
+        <div id="shape-group" class="radio-group">
+          <span class="radio-group-label">Gradient Shape</span>
+          <input id="shape-rect" name="shape" type="radio" value="rect" />
+          <label for="shape-rect">Rectangle</label>
+          <input id="shape-circ" name="shape" type="radio" value="circ" />
+          <label for="shape-circ">Circle</label>
+        </div>
+
+        <div id="width-group" class="slider-group">
+          <label for="width-text">Width</label>
+          <input id="width-text" type="text" />
+          <input id="width-slider" type="range" max="100" />
+        </div>
+        <div id="height-group" class="slider-group">
+          <label for="height-text">Height</label>
+          <input id="height-text" type="text" />
+          <input id="height-slider" type="range" max="100" />
+        </div>
+      </div>
+
+      <div id="tl-color-group" class="color-group">
+        <label for="tl-color">Top Left Color</label>
+        <input id="tl-color" type="color" />
+      </div>
+      <div id="tr-color-group" class="color-group">
+        <label for="tr-color">Top Right Color</label>
+        <input id="tr-color" type="color" />
+      </div>
+      <div id="bl-color-group" class="color-group">
+        <label for="bl-color">Bottom Left Color</label>
+        <input id="bl-color" type="color" />
+      </div>
+      <div id="br-color-group" class="color-group">
+        <label for="br-color">Bottom Right Color</label>
+        <input id="br-color" type="color" />
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
